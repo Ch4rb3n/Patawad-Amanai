@@ -6,7 +6,7 @@
     <title>Patawad Amanai</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="blue.ico"> <!-- Update the file extension based on your favicon format -->
+    <link rel="icon" type="image/ico" href="blue.ico">
 
     <style>
         body {
@@ -18,9 +18,9 @@
             color: #ffffff; /* White text for contrast */
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px 20px;
-            height: 100vh;
+            padding: 5vh 5vw;
             margin: 0; /* Removes default margin */
+            height: 100vh; /* Full viewport height */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -28,23 +28,33 @@
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 6vw; /* Responsive font size */
             color: #ffffff; /* Bright color for the header */
             background-color: rgba(0, 0, 0, 0.6); /* Semi-translucent background */
-            padding: 10px 20px;
+            padding: 1vh 2vw; /* Responsive padding */
             border-radius: 10px;
         }
 
         .main-paragraph {
-            font-size: 1.5em;
+            font-size: 4vw; /* Responsive font size */
             color: #ffffff;
-            max-width: 800px; /* Limit the width of the paragraph */
+            max-width: 90vw; /* Limit the width of the paragraph */
             line-height: 1.6;
             text-align: justify; /* Justified text alignment for a polished look */
-            margin: 20px 0;
+            margin: 2vh 0;
             background-color: rgba(0, 0, 0, 0.6); /* Semi-translucent background */
-            padding: 20px;
+            padding: 3vh 4vw; /* Responsive padding */
             border-radius: 10px; /* Rounded corners for the background */
+        }
+
+        /* Media query for smaller devices */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 8vw; /* Smaller header font size on mobile */
+            }
+            .main-paragraph {
+                font-size: 5vw; /* Smaller paragraph font size on mobile */
+            }
         }
 
     </style>
